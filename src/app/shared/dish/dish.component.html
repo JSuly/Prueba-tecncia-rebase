@@ -1,0 +1,16 @@
+<div class="c-dish" >
+    
+    <h2>For pairing:</h2>
+      
+      <div class="c-dish__food" *ngFor="let item of food; let i=index">
+        <img *ngIf="i<3"
+          class="c-dish__img c-dish__img--large"
+          src="{{ item.thumbnail }}"
+          alt="{{ item.title}}"
+        />
+        <a class="c-dish__link" href="{{item.href}}" rel="noreferrer" target="_blank">
+            <h3 class="c-dish__name c-dish__name--small" *ngIf="i<3">{{ item.title}}</h3>
+        </a>
+    </div>
+  
+  </div>

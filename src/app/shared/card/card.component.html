@@ -1,0 +1,17 @@
+<div class="c-card" *ngFor="let item of beer">
+   
+  <div class="c-card__div" routerLink="/beer/{{item.id}}">
+      <div class="c-card__beer">
+        <img
+          class="c-card__img c-card__img--large"
+          src="{{ item.image_url }}"
+          alt=""
+        />
+      </div>
+
+        <h3 class="c-card__name c-card__name--large">{{ item.name }}</h3>
+    </div>
+
+    <app-dish [food]="foods" ></app-dish>
+
+</div>

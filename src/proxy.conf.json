@@ -1,0 +1,11 @@
+{
+    "/recipepuppy": {
+      "target": "http://www.recipepuppy.com",
+      "secure": false,
+      "logLevel": "debug",
+      "pathRewrite": {
+        "^/recipepuppy": ""
+      },
+      "changeOrigin": true
+    }
+  }

@@ -1,0 +1,25 @@
+<div class="c-beer" *ngFor="let item of beer">
+
+    <div class="c-beer__home" routerLink="/">
+        <img src="../../../assets/images/beer.png" alt="cold beer">
+    </div>
+
+    <h1 class="c-beer__title">{{item.name}} :</h1>
+    <h3>"{{item.tagline}}"</h3>
+
+    <div class="c-beer__box">
+        <img class="c-beer__img" src="{{item.image_url}}" alt="{{item.name}}">
+    </div>
+
+    <div class="c-beer__about">
+
+        <h3>About this beer :</h3>
+        <p>{{item.description}}</p>
+        <p>ABV : {{item.abv}} º</p>
+        <p>FIRST BREW DATE : {{item.first_brewed}}</p>
+
+    </div>
+    
+    
+
+</div>

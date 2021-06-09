@@ -1,0 +1,46 @@
+.c-dish{
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    
+
+    &__food{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       text-align: center;
+    }
+
+    &__img{
+        border-radius: 100%;
+        margin: 5px;
+        
+        &--large{
+            width: 30%;
+        }
+        &--small{
+            width: 10%;
+        }
+    }
+
+    &__link{
+        text-decoration: none;
+        color: white;
+
+        &:hover{
+            color: yellow;
+        }
+    }
+
+    &__name{
+
+        &--large{
+            font-size:25px;
+        }
+        &--small{
+            font-size:14px;
+        }
+    }
+
+}
